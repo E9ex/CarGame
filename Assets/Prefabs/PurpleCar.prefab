@@ -328,6 +328,7 @@ GameObject:
   - component: {fileID: 4904482403144255644}
   - component: {fileID: 264745554845154469}
   - component: {fileID: 7240684916439302208}
+  - component: {fileID: 1858958793937650224}
   m_Layer: 0
   m_Name: PurpleCar
   m_TagString: Untagged
@@ -364,8 +365,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0058143, y: 1.3913015, z: 5.363793}
-  m_Center: {x: 0.005688548, y: 0.6828584, z: -0.22015953}
+  m_Size: {x: 2.0058143, y: 1.3597801, z: 5.363793}
+  m_Center: {x: 0.005688548, y: 0.6986191, z: -0.22015953}
 --- !u!54 &7240684916439302208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -382,6 +383,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1858958793937650224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5718419711761388070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462aa4be24a864008a4d0a0575dc6d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  steerAngle: 15
 --- !u!1 &6586100504624043586
 GameObject:
   m_ObjectHideFlags: 0
