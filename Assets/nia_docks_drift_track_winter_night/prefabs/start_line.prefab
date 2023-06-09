@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3329678}
   - component: {fileID: 2324180}
   - component: {fileID: 9522094}
+  - component: {fileID: 3316788457955300040}
   m_Layer: 0
   m_Name: start_line
   m_TagString: Untagged
@@ -105,3 +106,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &3316788457955300040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.022399, y: 3.0916362, z: 0.3313672}
+  m_Center: {x: 0.00076675415, y: -1.2417233, z: -0.090086564}

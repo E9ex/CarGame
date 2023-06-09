@@ -887,7 +887,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9004689682944068039}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0.0000000034924597, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.699996, y: -0.0000009536743, z: 0.089998245}
   m_LocalScale: {x: 1.0000007, y: 1.0000001, z: 1.0000005}
   m_ConstrainProportionsScale: 0
@@ -944,6 +944,7 @@ MonoBehaviour:
   maxspeed: 500
   steerAngle: 20
   traction: 1
+  scoretext: {fileID: 0}
   lw: {fileID: 7325476030153720311}
   rw: {fileID: 6641218165604313031}
   driftScore: 0

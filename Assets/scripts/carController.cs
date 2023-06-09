@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class carController : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class carController : MonoBehaviour
     [SerializeField] private float maxspeed;
     [SerializeField] private float steerAngle;
     [SerializeField] private float traction;
+    [SerializeField] private Text scoretext;
 
     public Transform lw, rw;
 
@@ -31,10 +33,10 @@ public class carController : MonoBehaviour
         lw.localRotation = Quaternion.Euler(vecrot);
         rw.localRotation = Quaternion.Euler(vecrot);
 
-        CalculateDriftScore();
+        hesaplaDriftScore();
     }
 
-    private void CalculateDriftScore()
+    private void hesaplaDriftScore()
     {
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0 )
         {
@@ -42,16 +44,15 @@ public class carController : MonoBehaviour
             {
                 isDrifting = true;
             }
-
             driftScore += Time.deltaTime;
+            float roundedScore = Mathf.Round(driftScore * 100) / 100; // Skoru noktadan sonra 2 basamağa yuvarlama
+            scoretext.text = "Score: " + roundedScore.ToString("0.00"); 
         }
         else
         {
             if (isDrifting)
             {
                 isDrifting = false;
-                // Burada drift tamamlandığında ne yapmak istediğinizi belirleyebilirsiniz.
-                // Örneğin, drift skorunu kaydedebilir, efektler ekleyebilir veya puanlama yapabilirsiniz.
             }
         }
     }
