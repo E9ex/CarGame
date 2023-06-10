@@ -940,8 +940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462aa4be24a864008a4d0a0575dc6d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CarSpeed: 200
-  maxspeed: 500
+  CarSpeed: 100
+  maxspeed: 350
   steerAngle: 20
   traction: 1
   scoretext: {fileID: 0}
